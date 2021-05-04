@@ -800,7 +800,7 @@ annotation a1 {
     label {Facultad de Cs. Exactas}
     labelcolor #000000
     fontfamily {Arial}
-    fontsize 12
+    fontsize {12}
     color #c3d000
     width 0
     border black
@@ -814,7 +814,7 @@ annotation a2 {
     label {Pladema}
     labelcolor black
     fontfamily {Arial}
-    fontsize 12
+    fontsize {12}
     color #06fbff
     width 0
     border black
@@ -828,7 +828,7 @@ annotation a3 {
     label {Ifimat}
     labelcolor black
     fontfamily {Arial}
-    fontsize 12
+    fontsize {12}
     color #00ffff
     width 0
     border black
@@ -842,7 +842,7 @@ annotation a4 {
     label {Centro de computos}
     labelcolor black
     fontfamily {Arial}
-    fontsize 12
+    fontsize {12}
     color #b058ff
     width 0
     border black
@@ -856,7 +856,7 @@ annotation a5 {
     label {Comedor}
     labelcolor black
     fontfamily {Arial}
-    fontsize 12
+    fontsize {12}
     color #86ff69
     width 0
     border black
@@ -870,7 +870,7 @@ annotation a6 {
     label {}
     labelcolor black
     fontfamily {Arial}
-    fontsize 12
+    fontsize {12}
     color #00d6d1
     width 0
     border black
@@ -884,7 +884,7 @@ annotation a7 {
     label {Internet Ipv4}
     labelcolor black
     fontfamily {Arial}
-    fontsize 12
+    fontsize {12}
     color #c07e00
     width 0
     border black
@@ -898,11 +898,234 @@ annotation a8 {
     label {Rectorado}
     labelcolor black
     fontfamily {Arial}
-    fontsize 12
+    fontsize {12}
     color #c049ff
     width 0
     border black
     rad 25
+    canvas c1
+}
+
+annotation a9 {
+    iconcoords {163.0 324.0}
+    type text
+    label {RedPladema}
+    labelcolor #ff0000
+    fontfamily {Arial}
+    fontsize {12}
+    canvas c1
+}
+
+annotation a10 {
+    type text
+    iconcoords {257.0 377.0}
+    label {}
+    canvas c1
+}
+
+annotation a11 {
+    type text
+    iconcoords {236.0 485.0}
+    label {}
+    canvas c1
+}
+
+annotation a12 {
+    iconcoords {196.0 107.0}
+    type text
+    label {RedIfimat}
+    labelcolor #ff0000
+    fontfamily {Arial}
+    fontsize {12}
+    canvas c1
+}
+
+annotation a13 {
+    type text
+    iconcoords {229.0 160.0}
+    label {}
+    canvas c1
+}
+
+annotation a14 {
+    type text
+    iconcoords {262.0 305.0}
+    label {}
+    canvas c1
+}
+
+annotation a15 {
+    iconcoords {254.0 256.0}
+    type text
+    label {RRED1}
+    labelcolor #ff0000
+    fontfamily {Arial}
+    fontsize {12}
+    canvas c1
+}
+
+annotation a16 {
+    type text
+    iconcoords {320.0 315.0}
+    label {}
+    canvas c1
+}
+
+annotation a17 {
+    type text
+    iconcoords {345.0 407.0}
+    label {}
+    canvas c1
+}
+
+annotation a18 {
+    type text
+    iconcoords {270.0 462.0}
+    label {}
+    canvas c1
+}
+
+annotation a19 {
+    iconcoords {385.0 364.0}
+    type text
+    label {RRED3}
+    labelcolor #ff0000
+    fontfamily {Arial}
+    fontsize {12}
+    canvas c1
+}
+
+annotation a20 {
+    type text
+    iconcoords {218.0 507.0}
+    label {}
+    canvas c1
+}
+
+annotation a21 {
+    type text
+    iconcoords {189.0 513.0}
+    label {}
+    canvas c1
+}
+
+annotation a22 {
+    iconcoords {874.0 358.0}
+    type text
+    label {RRED5}
+    labelcolor #ff0000
+    fontfamily {Arial}
+    fontsize 12
+    canvas c1
+}
+
+annotation a23 {
+    iconcoords {608.0 294.0}
+    type text
+    label {RedServerExa}
+    labelcolor #ff0000
+    fontfamily {Arial}
+    fontsize 12
+    canvas c1
+}
+
+annotation a24 {
+    iconcoords {418.0 235.0}
+    type text
+    label {RRED2}
+    labelcolor #ff0000
+    fontfamily {Arial}
+    fontsize {12}
+    canvas c1
+}
+
+annotation a25 {
+    iconcoords {1072.0 509.0}
+    type text
+    label {RRED7}
+    labelcolor #ff0000
+    fontfamily {Arial}
+    fontsize 12
+    canvas c1
+}
+
+annotation a26 {
+    iconcoords {765.0 501.0}
+    type text
+    label {RRED6}
+    labelcolor #ff0000
+    fontfamily {Arial}
+    fontsize 12
+    canvas c1
+}
+
+annotation a27 {
+    iconcoords {952.0 281.0}
+    type text
+    label {RedCComputos}
+    labelcolor #ff0000
+    fontfamily {Arial}
+    fontsize 12
+    canvas c1
+}
+
+annotation a28 {
+    iconcoords {617.0 366.0}
+    type text
+    label {RRED4}
+    labelcolor #ff0000
+    fontfamily {Arial}
+    fontsize {12}
+    canvas c1
+}
+
+annotation a29 {
+    iconcoords {633.0 673.0}
+    type text
+    label {RedComedor}
+    labelcolor #ff0000
+    fontfamily {Arial}
+    fontsize 12
+    canvas c1
+}
+
+annotation a30 {
+    iconcoords {876.0 638.0}
+    type text
+    label {RRED8}
+    labelcolor #ff0000
+    fontfamily {Arial}
+    fontsize 12
+    canvas c1
+}
+
+annotation a31 {
+    iconcoords {867.0 734.0}
+    type text
+    label {RedServerEcon}
+    labelcolor #ff0000
+    fontfamily {Arial}
+    fontsize 12
+    canvas c1
+}
+
+annotation a32 {
+    iconcoords {1147.0 685.0}
+    type text
+    label {RedLabEcon}
+    labelcolor #ff0000
+    fontfamily {Arial}
+    fontsize 12
+    canvas c1
+}
+
+annotation a33 {
+    iconcoords {1768.0 724.0}
+    type text
+    label {RedRectorado}
+    labelcolor #ff0000
+    fontfamily {Arial}
+    fontsize 12
     canvas c1
 }
 
