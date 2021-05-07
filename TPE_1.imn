@@ -45,6 +45,14 @@ node n3 {
     interface-peer {eth0 n2}
     interface-peer {eth1 n8}
     interface-peer {eth2 n7}
+    custom-config {
+	custom-config-id service:UserDefined
+	custom-command UserDefined
+	config {
+	cmdup=('ip -6 addr add fd00::/64 dev eth1', 'ip -6 addr add fd00:0:0:1::/64 dev eth2', )
+	}
+    }
+    services {zebra OSPFv2 OSPFv3 vtysh IPForward UserDefined}
 }
 
 node n4 {
@@ -110,6 +118,14 @@ node n7 {
     interface-peer {eth0 n8}
     interface-peer {eth1 n3}
     interface-peer {eth2 n12}
+    custom-config {
+	custom-config-id service:UserDefined
+	custom-command UserDefined
+	config {
+	cmdup=('ip -6 addr add fd00:0:0:1::1/64 dev eth1', 'ip -6 addr add fd00:0:0:2::1/64 dev eth0', 'ip -6 addr add fd00:0:0:3::/64 dev eth2', )
+	}
+    }
+    services {zebra OSPFv2 OSPFv3 vtysh IPForward UserDefined}
 }
 
 node n8 {
@@ -126,11 +142,19 @@ node n8 {
 	!
     }
     canvas c1
-    iconcoords {310.0 372.0}
-    labelcoords {310.0 404.0}
+    iconcoords {316.0 377.0}
+    labelcoords {316.0 409.0}
     interface-peer {eth0 n11}
     interface-peer {eth1 n7}
     interface-peer {eth2 n3}
+    custom-config {
+	custom-config-id service:UserDefined
+	custom-command UserDefined
+	config {
+	cmdup=('ip -6 addr add fd00::1/64 dev eth2', 'ip -6 addr add fd00:0:0:2::/64 dev eth1', )
+	}
+    }
+    services {zebra OSPFv2 OSPFv3 vtysh IPForward UserDefined}
 }
 
 node n9 {
@@ -199,6 +223,14 @@ node n12 {
     interface-peer {eth1 n6}
     interface-peer {eth2 n15}
     interface-peer {eth3 n20}
+    custom-config {
+	custom-config-id service:UserDefined
+	custom-command UserDefined
+	config {
+	cmdup=('ip -6 addr add fd00:0:0:3::1/64 dev eth0', )
+	}
+    }
+    services {zebra OSPFv2 OSPFv3 vtysh IPForward UserDefined}
 }
 
 node n13 {
@@ -211,8 +243,8 @@ node n13 {
 	!
     }
     canvas c1
-    iconcoords {392.0 614.0}
-    labelcoords {392.0 646.0}
+    iconcoords {429.0 614.0}
+    labelcoords {429.0 646.0}
     interface-peer {eth0 n14}
 }
 
@@ -501,8 +533,8 @@ node n28 {
 	}
     }
     canvas c1
-    iconcoords {1251.0 749.0}
-    labelcoords {1208.0 803.0}
+    iconcoords {1133.0 660.0}
+    labelcoords {1090.0 714.0}
     interface-peer {e0 n21}
     interface-peer {e1 n29}
 }
@@ -517,8 +549,8 @@ node n29 {
 	!
     }
     canvas c1
-    iconcoords {1294.0 855.0}
-    labelcoords {1290.0 898.0}
+    iconcoords {1227.0 712.0}
+    labelcoords {1223.0 755.0}
     interface-peer {eth0 n28}
 }
 
@@ -1015,7 +1047,7 @@ annotation a22 {
     label {RRED5}
     labelcolor #ff0000
     fontfamily {Arial}
-    fontsize 12
+    fontsize {12}
     canvas c1
 }
 
@@ -1025,7 +1057,7 @@ annotation a23 {
     label {RedServerExa}
     labelcolor #ff0000
     fontfamily {Arial}
-    fontsize 12
+    fontsize {12}
     canvas c1
 }
 
@@ -1045,7 +1077,7 @@ annotation a25 {
     label {RRED7}
     labelcolor #ff0000
     fontfamily {Arial}
-    fontsize 12
+    fontsize {12}
     canvas c1
 }
 
@@ -1055,7 +1087,7 @@ annotation a26 {
     label {RRED6}
     labelcolor #ff0000
     fontfamily {Arial}
-    fontsize 12
+    fontsize {12}
     canvas c1
 }
 
@@ -1065,7 +1097,7 @@ annotation a27 {
     label {RedCComputos}
     labelcolor #ff0000
     fontfamily {Arial}
-    fontsize 12
+    fontsize {12}
     canvas c1
 }
 
@@ -1080,12 +1112,12 @@ annotation a28 {
 }
 
 annotation a29 {
-    iconcoords {633.0 673.0}
+    iconcoords {594.3333333333334 659.6666666666666}
     type text
     label {RedComedor}
     labelcolor #ff0000
     fontfamily {Arial}
-    fontsize 12
+    fontsize {12}
     canvas c1
 }
 
@@ -1095,7 +1127,7 @@ annotation a30 {
     label {RRED8}
     labelcolor #ff0000
     fontfamily {Arial}
-    fontsize 12
+    fontsize {12}
     canvas c1
 }
 
@@ -1105,7 +1137,7 @@ annotation a31 {
     label {RedServerEcon}
     labelcolor #ff0000
     fontfamily {Arial}
-    fontsize 12
+    fontsize {12}
     canvas c1
 }
 
@@ -1115,7 +1147,7 @@ annotation a32 {
     label {RedLabEcon}
     labelcolor #ff0000
     fontfamily {Arial}
-    fontsize 12
+    fontsize {12}
     canvas c1
 }
 
@@ -1125,7 +1157,21 @@ annotation a33 {
     label {RedRectorado}
     labelcolor #ff0000
     fontfamily {Arial}
-    fontsize 12
+    fontsize {12}
+    canvas c1
+}
+
+annotation a36 {
+    type text
+    iconcoords {723.0 336.0}
+    label {}
+    canvas c1
+}
+
+annotation a37 {
+    type text
+    iconcoords {754.0 362.0}
+    label {}
     canvas c1
 }
 
@@ -1137,7 +1183,7 @@ canvas c1 {
 }
 
 option global {
-    interface_names no
+    interface_names yes
     ip_addresses yes
     ipv6_addresses yes
     node_labels yes
